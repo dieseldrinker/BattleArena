@@ -43,3 +43,24 @@ body {
 .step2 {
 	display: none;
 }
+.step3 {
+	display: none;
+}
+.ninja {
+	/*display:none;*/
+	width: 278px;
+	height: 384px;
+	position: absolute;
+	bottom: 100px;
+	/*background: cover;*/
+	/*background-image: url("NinjaArena/green.png")*/
+}
+#ninja1 {
+	left: 100px;
+}
+#ninja2 {
+	right: 100px;
+}
+#fight {
+	margin-top: 20px;
+}

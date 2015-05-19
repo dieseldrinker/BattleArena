@@ -9,7 +9,28 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script type="text/javascript">
+$(document).ready(function(){
+	$('.step1 button').click(function(){
+		var src = $(this).attr("data-img-src");
+		console.log(src);
+		$('body').css('background-image','url('+src+')');
+		$('.step1, .step2').toggle();
+	})
+	$('.player1').change(function(){
+		var ninja1 = $(this).val();
+		$('#ninja1').css('background-image','url("'+ninja1+'")');
+		console.log($(this).val());
 
+	})
+	$('.player2').change(function(){
+		var ninja2 = $(this).val();
+		$('#ninja2').css('background-image','url("'+ninja2+'")');
+		console.log($(this).val());
+	})
+	$('#fight').click(function(){
+		$('.step2, .selections, container').toggle();
+	})
+})
 </script>
 
 </head>
@@ -55,12 +76,16 @@
 			<option value="NinjaArena/red.png">Red Ninja</option>
 			<option value="NinjaArena/leo.jpg">Leo Ninja</option>
 		</select>
+			<button value="Fight!" id="fight">Fight!</button>
 
 	</section>
 
 	
+	
 
 </div>
+<div id="ninja1" class="ninja"></div>
+	<div id="ninja2" class="ninja"></div>
 
 </body>
 </html>
