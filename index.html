@@ -11,6 +11,13 @@
 <script type="text/javascript">
 
 	$(document).ready(function(){
+		$('.step1 button').hover(function(){
+			var picture = $(this).attr('data-img-src')
+			console.log(picture)
+			$('body').css('background-image','url('+picture+')');
+			// $('.step1').toggle();
+			// $('.step2').toggle();
+		})
 		$('.step1 button').click(function(){
 			var picture = $(this).attr('data-img-src')
 			console.log(picture)
@@ -26,7 +33,9 @@
 		$('.player2').change(function(){
 			var character2 = $('.player2 option:selected').attr('value')
 			console.log(character2);
+			$('.player2spot').css('background','url('+character2+') no-repeat center center')
 		})
+		
 
 	})
 
@@ -57,8 +66,8 @@
 		
 	<section class="step2">
 		<select class="player1">
-<!-- 			<option disabled selected>Select Ninja:</option>
--->			<option value="NinjaArena/yellow.png">Yellow Ninja</option>
+ 			<option disabled selected>Select Ninja:</option>
+			<option value="NinjaArena/yellow.png">Yellow Ninja</option>
 			<option value="NinjaArena/white.png">White Ninja</option>
 			<option value="NinjaArena/black.png">Black Ninja</option>
 			<option value="NinjaArena/green.png">Green Ninja</option>
@@ -67,8 +76,8 @@
 		</select>
 
 		<select class="player2">
-<!-- 			<option disabled selected>Select Ninja:</option>
--->			<option value="NinjaArena/yellow.png">Yellow Ninja</option>
+ 			<option disabled selected>Select Ninja:</option>
+			<option value="NinjaArena/yellow.png">Yellow Ninja</option>
 			<option value="NinjaArena/white.png">White Ninja</option>
 			<option value="NinjaArena/black.png">Black Ninja</option>
 			<option value="NinjaArena/green.png">Green Ninja</option>
@@ -76,15 +85,16 @@
 			<option value="NinjaArena/leo.jpg">Leo Ninja</option>
 		</select>
 
+		
+
 	</section>
-
-
-	<div class="player1spot">
+	</div> <!-- End Selections -->
+	<div class="playerboxes">
+		<div class="player1spot">
+		</div>
+		<div class="player2spot">
+		</div>
 	</div>
-	<div class="player2spot">
-	</div>
-
-</div>
-
+</div> <!-- End Container -->
 </body>
 </html>

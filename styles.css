@@ -46,4 +46,15 @@ body {
 .player1spot{
 	height: 500px;
 	width:  350px;
+	display: inline-block;
+}
+.player2spot{
+	height: 500px;
+	width: 350px;
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+}
+.fight{
+	margin-top: 20px;
 }
