@@ -1,0 +1,45 @@
+* {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	padding-top: 20%;
+}
+.selections {
+	width: 250px;
+	margin: 0 auto;
+	background: rgba(76,76,76,0.8);
+	text-align: center;
+	color: orange;
+	text-shadow: 1px 1px white;
+	border-radius: 7px;
+	vertical-align: middle;
+	padding-top: 30px;
+	padding-bottom: 20px
+}
+.buttonarea	{
+	width: 150px;
+	margin: 0 auto;
+}
+button {
+	padding: 2px;
+	width: 45px;
+	margin-bottom: 3px;
+	border-radius: 3px;
+	border: none;
+}
+h1 {
+	margin-bottom: 10px;
+}	
+h1  {
+	margin-bottom: 10px;
+}
+body {
+	background: black;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.step2 {
+	display: none;
+}
