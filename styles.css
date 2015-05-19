@@ -43,3 +43,7 @@ body {
 .step2 {
 	display: none;
 }
+.player1spot{
+	height: 500px;
+	width:  350px;
+}

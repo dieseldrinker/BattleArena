@@ -10,6 +10,26 @@
 
 <script type="text/javascript">
 
+	$(document).ready(function(){
+		$('.step1 button').click(function(){
+			var picture = $(this).attr('data-img-src')
+			console.log(picture)
+			$('body').css('background-image','url('+picture+')');
+			$('.step1').toggle();
+			$('.step2').toggle();
+		})
+		$('.player1').change(function(){
+			var character1 = $('.player1 option:selected').attr('value')
+			console.log(character1);
+			$('.player1spot').css('background','url('+character1+') no-repeat center center')
+		})
+		$('.player2').change(function(){
+			var character2 = $('.player2 option:selected').attr('value')
+			console.log(character2);
+		})
+
+	})
+
 </script>
 
 </head>
@@ -58,7 +78,11 @@
 
 	</section>
 
-	
+
+	<div class="player1spot">
+	</div>
+	<div class="player2spot">
+	</div>
 
 </div>
 
